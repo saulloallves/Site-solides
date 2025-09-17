@@ -10,9 +10,7 @@ function runCustomizations() {
         `;
         const girafaImgContainer = girafaSection.querySelector('.wrap-item-img > div');
         if (girafaImgContainer) {
-            // Esconde a imagem placeholder e aplica a nossa como fundo
-            const placeholderImg = girafaSection.querySelector('.wrap-item-img img');
-            //if (placeholderImg) placeholderImg.style.display = 'none';
+            // A LINHA QUE ESCONDIA A IMAGEM FOI REMOVIDA DAQUI.
             
             girafaImgContainer.style.cssText += `
                 background-image: url(https://raw.githubusercontent.com/saulloallves/Site-solides/main/GIRAFA%20SENTADA.png) !important; 
