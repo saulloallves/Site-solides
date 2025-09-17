@@ -1,0 +1,32 @@
+/* --- ESTILO COMPLETO E OTIMIZADO PARA A HOME - CARREGADO VIA SCRIPT --- */
+
+/* BANNER */
+#bem-vindo.banner-home-bg{background-image:url(https://raw.githubusercontent.com/saulloallves/Site-solides/main/FUNDO%20TOTAL%20DO%20SITE.png)!important;background-size:cover;background-position:center}
+
+/* SEÇÃO GIRAFA */
+.custom-item-page-1173{background-color:#009fe3;background-image:url(https://raw.githubusercontent.com/saulloallves/Site-solides/main/PINTAS.png);background-repeat:repeat;color:#fff;padding:60px 0;position:relative;z-index:1}
+.custom-item-page-1173 .info-text,.custom-item-page-1173 h3{color:#fff!important}
+.custom-item-page-1173 .wrap-item-img img{content:url(https://raw.githubusercontent.com/saulloallves/Site-solides/main/GIRAFA%20SENTADA.png)!important;object-fit:contain;max-height:400px}
+.custom-item-page-1173::after{content:'';position:absolute;bottom:-1px;left:0;width:100%;height:60px;background-image:url(https://raw.githubusercontent.com/saulloallves/Site-solides/main/ONDA%20AMARELA.png);background-repeat:no-repeat;background-size:100% 100%;z-index:2}
+
+/* SEÇÃO MISSÃO, VISÃO, VALORES */
+#sobrenos{padding-top:80px!important;background:#fff;z-index:0}
+#sobrenos .item-quemsomos.box{background-color:#ffcb05;border-radius:20px;padding:40px 20px 20px;color:#3d3d3d;text-align:left;box-shadow:0 4px 15px rgba(0,0,0,.1);position:relative;min-height:320px}
+#sobrenos .item-quemsomos.box::before{content:'';position:absolute;top:-25px;left:50%;transform:translateX(-50%);width:160px;height:55px;background-size:contain;background-repeat:no-repeat;background-position:center}
+#sobrenos .item-page-home-missao .box::before{background-image:url(https://raw.githubusercontent.com/saulloallves/Site-solides/main/TITULO%20MIS%C3%83O.png)}
+#sobrenos .item-page-home-visao .box::before{background-image:url(https://raw.githubusercontent.com/saulloallves/Site-solides/main/TITULO%20VIS%C3%83O.png)}
+#sobrenos .item-page-home-valores .box::before{background-image:url(https://raw.githubusercontent.com/saulloallves/Site-solides/main/TITULO%20VALORES.png)}
+
+/* LÓGICA DE ANIMAÇÃO */
+#sobrenos .item-quemsomos.box,.custom-item-page .wrap-item-text,.custom-item-page .wrap-item-img{opacity:0;will-change:transform,opacity}
+.custom-item-page.visible .wrap-item-text,.custom-item-page.visible .wrap-item-img{opacity:1;transform:none}
+.custom-item-page .wrap-item-text,.custom-item-page .wrap-item-img{transform:translateY(40px);transition:transform 1s cubic-bezier(.165,.84,.44,1),opacity 1s cubic-bezier(.165,.84,.44,1)}
+#sobrenos.visible .item-page-home-missao .box{animation:bounceInLeft 1.2s cubic-bezier(.215,.61,.355,1) .2s forwards}
+#sobrenos.visible .item-page-home-valores .box{animation:bounceInRight 1.2s cubic-bezier(.215,.61,.355,1) .2s forwards}
+#sobrenos.visible .item-page-home-visao .box{animation:squashAndBounce 1.2s cubic-bezier(.215,.61,.355,1) forwards}
+
+/* ANIMAÇÕES @keyframes */
+@keyframes fadeInText{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes bounceInLeft{0%{opacity:0;transform:translateX(-150px)}60%{opacity:1;transform:translateX(20px)}80%{transform:translateX(-5px)}100%{opacity:1;transform:translateX(0)}}
+@keyframes bounceInRight{0%{opacity:0;transform:translateX(150px)}60%{opacity:1;transform:translateX(-20px)}80%{transform:translateX(5px)}100%{opacity:1;transform:translateX(0)}}
+@keyframes squashAndBounce{0%{opacity:0;transform:scale(.8) translateY(100px)}50%{opacity:1;transform:translateY(0) scale(1)}65%{transform:scale(1.1,.9)}80%{transform:scale(.95,1.05)}100%{opacity:1;transform:scale(1)}}
