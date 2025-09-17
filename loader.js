@@ -12,7 +12,7 @@ function runCustomizations() {
         if (girafaImgContainer) {
             // Esconde a imagem placeholder e aplica a nossa como fundo
             const placeholderImg = girafaSection.querySelector('.wrap-item-img img');
-            if (placeholderImg) placeholderImg.style.display = 'none';
+            //if (placeholderImg) placeholderImg.style.display = 'none';
             
             girafaImgContainer.style.cssText += `
                 background-image: url(https://raw.githubusercontent.com/saulloallves/Site-solides/main/GIRAFA%20SENTADA.png) !important; 
