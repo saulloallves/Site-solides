@@ -1,62 +1,53 @@
-/* --- ESTILO COMPLETO E CORRIGIDO (V3) --- */
+/* --- ESTILO COMPLETO E REFORÇADO (V4) --- */
 
 /* BANNER */
 #bem-vindo.banner-home-bg {
     background-image: url(https://raw.githubusercontent.com/saulloallves/Site-solides/main/FUNDO%20TOTAL%20DO%20SITE.png) !important;
-    background-size: cover;
-    background-position: center;
+    background-size: cover !important;
+    background-position: center !important;
 }
 
 /* SEÇÃO GIRAFA */
 .custom-item-page-1173 {
-    background-color: #009FE3;
-    background-image: url(https://raw.githubusercontent.com/saulloallves/Site-solides/main/PINTAS.png);
-    color: #fff; padding: 60px 0; position: relative; z-index: 1;
+    background-color: #009FE3 !important;
+    background-image: url(https://raw.githubusercontent.com/saulloallves/Site-solides/main/PINTAS.png) !important;
+    color: #fff !important; padding: 60px 0 !important; position: relative !important; z-index: 1 !important;
 }
 .custom-item-page-1173 .wrap-item-img img { display: none !important; }
 .custom-item-page-1173 .wrap-item-img > div {
-    background-image: url(https://raw.githubusercontent.com/saulloallves/Site-solides/main/GIRAFA%20SENTADA.png);
-    background-size: contain; background-repeat: no-repeat; background-position: center;
-    min-height: 450px !important; /* Aumentado e forçado para garantir visibilidade */
+    background-image: url(https://raw.githubusercontent.com/saulloallves/Site-solides/main/GIRAFA%20SENTADA.png) !important;
+    background-size: contain !important; 
+    background-repeat: no-repeat !important; 
+    background-position: center !important;
+    min-height: 450px !important; /* Força a altura da div */
 }
 .custom-item-page-1173 .info-text, .custom-item-page-1173 h3 { color: #fff !important; }
 .custom-item-page-1173::after {
-    content: ''; position: absolute; bottom: -1px; left: 0; width: 100%; height: 60px;
-    background-image: url(https://raw.githubusercontent.com/saulloallves/Site-solides/main/ONDA%20AMARELA.png);
-    background-repeat: no-repeat; background-size: 100% 100%; z-index: 2;
+    content: '' !important; position: absolute !important; bottom: -1px !important; left: 0 !important; width: 100% !important; height: 60px !important;
+    background-image: url(https://raw.githubusercontent.com/saulloallves/Site-solides/main/ONDA%20AMARELA.png) !important;
+    background-repeat: no-repeat !important; background-size: 100% 100% !important; z-index: 2 !important;
 }
 
-/* SEÇÃO MISSÃO, VISÃO, VALORES - CORREÇÃO PRINCIPAL AQUI */
-#sobrenos { padding-top: 80px !important; background: #fff; z-index: 0; }
+/* SEÇÃO MISSÃO, VISÃO, VALORES */
+#sobrenos { padding-top: 80px !important; background: #fff !important; z-index: 0 !important; }
 #sobrenos .item-quemsomos.box {
-    background-color: #FFCB05; border-radius: 20px; padding-top: 40px !important;
-    position: relative; min-height: 320px;
+    background-color: #FFCB05 !important; border-radius: 20px !important; padding-top: 40px !important;
+    position: relative !important; min-height: 320px !important;
 }
-/* 1. Escondemos o TÍTULO de texto e o ÍCONE (a tag <i>) de dentro do container */
 #sobrenos .quemsomos-titulo,
-#sobrenos .quemsomos-icone i {
-    display: none !important;
-}
-/* 2. "Sequestramos" o container do ícone (.quemsomos-icone) e o transformamos no nosso título */
+#sobrenos .quemsomos-icone i { display: none !important; }
 #sobrenos .quemsomos-icone {
-    position: absolute !important;
-    top: -25px !important;
-    left: 50% !important;
+    position: absolute !important; top: -25px !important; left: 50% !important;
     transform: translateX(-50%) !important;
-    width: 160px !important; /* Força o tamanho correto */
-    height: 55px !important; /* Força o tamanho correto */
-    background-color: transparent !important; /* Remove a cor de fundo original */
-    background-size: contain !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
+    width: 160px !important; height: 55px !important;
+    background-color: transparent !important;
+    background-size: contain !important; background-repeat: no-repeat !important; background-position: center !important;
 }
-/* 3. Aplicamos a imagem correta para cada card */
 #sobrenos .item-page-home-missao .quemsomos-icone { background-image: url(https://raw.githubusercontent.com/saulloallves/Site-solides/main/TITULO%20MIS%C3%83O.png) !important; }
 #sobrenos .item-page-home-visao .quemsomos-icone { background-image: url(https://raw.githubusercontent.com/saulloallves/Site-solides/main/TITULO%20VIS%C3%83O.png) !important; }
 #sobrenos .item-page-home-valores .quemsomos-icone { background-image: url(https://raw.githubusercontent.com/saulloallves/Site-solides/main/TITULO%20VALORES.png) !important; }
 
 /* --- LÓGICA DE ANIMAÇÃO (SEM ALTERAÇÕES) --- */
-/* ... (O restante do código de animação continua igual) ... */
 #sobrenos .item-quemsomos.box, .custom-item-page .wrap-item-text, .custom-item-page .wrap-item-img {
     opacity: 0; will-change: transform, opacity;
 }
